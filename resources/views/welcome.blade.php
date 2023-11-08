@@ -1,267 +1,382 @@
 @include('layouts.welcome.header')
 
 
-<div class="intro-section" id="home-section">
+    <!-- <div class="popup">
+        <button id="close">&times;</button>
+        <h4>Subscribe with TSA for updates</h4>
+        <form class="form">
+            <div class="form-group mb-2 col-lg-3 ">
+                <label for="email" class="label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Subscribe here</button>
+        </form>
 
-    <div class="slide-1" style="background-image: url('{{ asset('web/img/cover_img.png') }}');"
-        data-stellar-background-ratio="0.5">
+    </div> -->
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                2000
+            )
+        });
+        document.querySelector("#close").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
+    <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h1 data-aos="fade-up" data-aos-delay="100" style="font-weight: bold;">IFAKARA DIOCESE
-                                PORTAL</h1>
-                            <p class="mb-4" data-aos="fade-up" data-aos-delay="200">With the aim of
-                                improving
-                                perfomance and staffs workign in a digital world as diocese.</p>
-                            <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn  py-3 px-5 btn-pill"
-                                    style="background-color: #001D23; color:#FF6F0F;">Register to apply Job</a></p>
+            <a class="navbar-brand" href="index.html" style="text-align: center; color: #000; font-size: 24px;">
+                <img src="{{asset('web/images/logo1.png')}}" style="width: 32px; height: 32px; float: left; color: #000;" /> TANZANIA
+                <span style="color: #000;">Startup Association</span>
+            </a>
+            <button class="navbar-toggler" style="margin-right: 2%; color: #fff;" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About us</a>
+                    </li>
 
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Events</a></li>
+                    <li class="nav-item">
+                        <a href="membership.html" class="nav-link">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publication.html" class="nav-link">Publication</a>
+                    </li>
+
+                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+                    <li> <button class="btn btn-primary mt-2"> <a href="https://linktr.ee/tanzaniastartup" style="color: #fff; font-weight: 600;">Reach Out</a></button></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="background-image: url('{{asset('web/images/bg_1.jpg')}}');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h2 class="subheading">What We Do</h2>
+                    <h1>Supporting Startups on
+                        <span class="txt-rotate" data-period="2000" data-rotate='[ "Lobbying", "Networks", "Capacity", "Research", "Advocacy"]'></span>
+                    </h1>
+                    <!-- <h1 class="mb-4">Attorneys Fighting For Your Freedom</h1> -->
+                    <p class="mb-4">
+                        A membership-based umbrella organisation that brings together stakeholders of Tanzania's startup ecosystem to lobby, advocate and drive for frameworks that create a conducive business environment for the ecosystems to grow and scale.
+                    </p>
+                    <p><a href="contact.html" class="btn btn-primary mr-md-4 py-2 px-4">Contact Us <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="ftco-section ftco-no-pt ftco-no-pb" id="mission">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-10 text-center heading-section ftco-animate">
+                    <h2 class="mt-4">Why Tanzania Startup Association</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-6 d-flex">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url({{asset('web/images/person_1.jpg')}});">
+                    </div>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row justify-content-start pt-3 pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <span class="subheading">Greetings from the TSA Board of Directors</span>
+                            <p class="mb-4 justify-content-md-end" style="text-align: justify;">
+                                About 1,000,000 job seekers enter the Tanzania labor market annually, according to <span><a href="https://www.tro.go.tz/wp-content/uploads/2021/06/FYDP-III-English.pdf " style="color:#000;">Office of Treasury Registerar</a></span>,
+                                while the economy's capacity to create new jobs is less than 40,000 per annum in the public sector and 300,000 in the private sector. With these low figures, youth unemployment is an increasing challenge in Tanzania.
+                            </p>
+                            <p class="mb-4" style="text-align: justify;">
+                                Over the years, entrepreneurship and innovation have created an opportunity for this category of the population to self-employ. For example, Tanzania has witnessed an explosion in the number of startups since 2009. According to study done by World Bank
+                                2017, the number of new startups grew by 33%, and the potential for further growth and survival is immense.
+                            </p>
+                            <p class="mb-4" style="text-align: justify;">
+                                At TSA we believe in leveraging innovation to create new business models to solve societal challenges. As an apex body for the startup's ecosystem in Tanzania, we are working with key stakeholders, policy, and decision-makers to create a conducive environment
+                                for startups to flourish. We all have a role to play in facilitating the growth of startups in Tanzania. I am convinced startups will be game changers in Tanzania in the next ten years. The next generation of Tanzanian
+                                millionaires will come from startups. I welcome you to join us on this exciting journey.
+                            </p>
+                            <div class="mt-3">
+                                <h3>Paul Makanza</h3>
+                                <span class="subheading">Chairman</span>
+                            </div>
                         </div>
-                        <div class="col-lg-5 mt-5" data-aos="fade-up" data-aos-delay="500">
-                            <div class="py-1"
-                                style="background-color: #fff; border-radius:10px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
-                                <form action="{{ route('login') }}" method="post" class="form-box">
-                                    @csrf
-                                    <h3 class="h4 text-black text-center" style="font-weight: 900;">Login Here
-                                    </h3>
-                                    <div class="mt-5">
-                                        <div class="form-group">
-                                            <label for="email"
-                                                style="font-size: 15px;">{{ __('Email Address') }}</label>
-                                            <input type="email"
-                                                class="form-control  @error('email') is-invalid @enderror"
-                                                placeholder="Enter your email addresss" required name="email">
-                                            @error('email')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="password" style="font-size: 15px">{{ __('Password') }}</label>
-                                            <input type="password"
-                                                class="form-control @error('password') is-invalid @enderror"
-                                                placeholder="Enter  your password" name="password" required>
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                        <div class="form-check">
-
-                                            <label class="form-check-label" for="flexCheckDefault"
-                                                style="font-size: 15px">
-                                                <input class="form-check-input mt-1" name="remember" type="checkbox"
-                                                    value="" id="flexCheckDefault" {{ old('remember') ? 'checked' : '' }}>{{ __('Remember Me') }}
-                                            </label>
-                                        </div>
-
-                                    </div>
-
-                                    <button class="btn btn-primary btn-block btn-pill mt-3"
-                                        type="submit">{{ __('Login') }}</button>
-                                </form>
-                                <div class="mt-1" style="">
-                                    <p class="text-center">
-                                        @if (Route::has('password.request'))
-                                            <a href="{{ route('password.request') }}"
-                                                style="font-size: 13px; font-weight:600;">
-                                                {{ __('Forgot Your Password?') }}</a>
-                                        @endif
+    <section class="ftco-section ftco-no-pt" id="interest">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-3 py-5">
+                    <div class="heading-section ftco-animate">
+                        <span class="subheading">Our Interest</span>
+                        <h2 class="mb-4">Work With Us</h2>
+                        <p style="text-align: justify;">
+                            We work with public institutions, private companies, development partners, academia, hubs and investor networks, to foster,nurture and enhance the startup ecosystem in Tanzania.
+                        </p>
+                        <!-- <p><a href="#" class="btn btn-primary py-3 px-4">Organization Deck</a></p> -->
+                    </div>
+                </div>
+                <div class="col-lg-9 services-wrap px-4 pt-5">
+                    <div class="row pt-md-3">
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="flaticon-auction"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Advocacy</h3>
+                                    <p style="text-align: justify;" class="mt-2">
+                                        Advocating and lobbying for policies, laws, and regulatory frameworks that foster the growth of the startup ecosystem. </p>
+                                </div>
+                                <!-- <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+										class="ion-ios-arrow-round-forward"></span></a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span><i class="fas fa-bullseye"></i></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Investment</h3>
+                                    <p style="text-align: justify;" class="mt-2">
+                                        Working with local international players in to accelerate the flow of capital investment opportunities to the ecosystem. </p>
+                                </div>
+                                <!-- <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+										class="ion-ios-arrow-round-forward"></span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-md-3">
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span><i class="fa-solid fa-book"></i></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Insights</h3>
+                                    <p style="text-align: justify;" class="mt-2">
+                                        Producing data and information to help keep track of the ecosystem. </p>
+                                </div>
+                                <!-- <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+										class="ion-ios-arrow-round-forward"></span></a> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="flaticon-medal"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Partnerships</h3>
+                                    <p style="text-align: justify;" class="mt-2">
+                                        We work with startup companies, government ministries and agencies, entrepreneurship support organisations, academia, capital providers, private sector associations, development partners, and the international community to advance our startup ecosystem.
                                     </p>
-                                 
-
                                 </div>
-
+                                <!-- <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+										class="ion-ios-arrow-round-forward"></span></a> -->
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section">
+        <div class="container" style="margin-top: -10%;">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Latest Events</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel-case owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="case img d-flex align-items-center justify-content-center" style="background-image: url({{asset('web/images/events/us_2.jpg')}});">
+                                <div class="text text-center">
+                                    <h3><a href="blog.html">TSA Meetings</a></h3>
+                                    <span><a href="blog.html"  style="color: #fff;"> <br> VISIT FROM THE US AMBASSADOR</a> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="case img d-flex align-items-center justify-content-center" style="background-image: url({{asset('web/images/events/girls_2.jpg')}});">
+                                <div class="text text-center">
+                                    <h3><a href="blog.html">TSA CatchUps</a></h3>
+                                    <span><a href="blog.html"  style="color: #fff;">TSA-GIRLS IN TECH <br>  COCKTAIL EVENT.</a> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="case img d-flex align-items-center justify-content-center" style="background-image: url({{asset('web/images/case-3.jpg')}});">
+                                <div class="text text-center">
+                                    <h3><a href="blog.html">TSA Forum</a></h3>
+                                    <span> <a href="blog.html" style="color: #fff;">Open Public Forum <br>For Starups and SMEs.</a> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center">
+                        <a href="blog.html">
+                            <strong class="text-primary">Go to Page <i class="fas fa-forward"></i></strong>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb" id="mission">
+        <div class="container" style="margin-top: -6%;">
+            <div class="row justify-content-center mb-5 mt-4">
+                <div class="col-md-10 text-center heading-section ftco-animate">
+
+                    <h2 class="mb-4">Publication and Documentation</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-6 d-flex">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url({{asset('web/images/annualReport.png')}});">
+                    </div>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row justify-content-start pt-3 pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <span class="subheading">latest publication</span>
+                            <h2 class="mb-4">
+                                CEO'S REPORT FOR THE PERIOD FROM JAN 2020 TO DEC 2021
+                            </h2>
+
+                            <div>
+                                <a href="publication.html" class="btn btn-primary btn-block" target="_blank">go to Page<span class="icon icon-arrow"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Partners</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 text-center">
+                    <div class="practice-area ftco-animate">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <a href="https://www.fondationbotnar.org/">
+                                <img src="{{asset('web/images/partener/Botnar.png')}}" alt="Botnar" srcset="" style="width: 200px; ">
+                            </a>
+                        </div>
+                        <a href="https://www.fondationbotnar.org/" class="btn-custom d-flex align-items-center justify-content-center">
+                            <span class="position">BOTNAR</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.cbe.ac.tz/">
+                                <img src="{{asset('web/images/partener/CBE-logo.webp')}}" alt="CBE" style="height: 100px;" srcset="">
+                            </a>
+                        </div>
+                        <a href="https://www.cbe.ac.tz/ " class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">CBE</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.costech.or.tz/">
+                                <img src="{{asset('web/images/partener/COSTECH.jpg')}}" alt="costech" style="height: 100px;" srcset="">
+                            </a>
+                        </div>
+                        <a href="https://www.costech.or.tz/" class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">COSTECH</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.ecovalleyadvisers.co.tz/">
+                                <img src="{{asset('web/images/partener/ecovall.png')}}" alt="ecovalley" srcset="">
+                            </a>
+                        </div>
+                        <a href="https://www.ecovalleyadvisers.co.tz/" class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">ECOVALLEY</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.netherlandsandyou.nl/your-country-and-the-netherlands/tanzania/about-us">
+                                <img src="{{asset('web/images/partener/netherlands.png')}}" alt="netherland" srcset="" style="width: 250px;">
+                            </a>
 
                         </div>
+                        <a href="https://www.netherlandsandyou.nl/your-country-and-the-netherlands/tanzania/about-us" class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">NETHERLAND</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.segalfamilyfoundation.org/">
+                                <img src="{{asset('web/images/partener/segal.jpg')}}" alt="Segal" srcset="" style="width: 200px; padding-top:50px; padding-bottom: 70px;">
+                            </a>
+
+                        </div>
+                        <a href="https://www.segalfamilyfoundation.org/ " class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">SEGAL</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center ">
+                    <div class="practice-area ftco-animate ">
+                        <div class="icon d-flex justify-content-center align-items-center ">
+                            <a href="https://www.udsm.ac.tz/">
+                                <img src="{{asset('web/images/partener/udsm.png')}}" alt="UDSM" style="width: 200px; height:120px; margin-left: 20px;" srcset="">
+                            </a>
+                        </div>
+                        <a href="https://www.udsm.ac.tz/ " class="btn-custom d-flex align-items-center justify-content-center ">
+                            <span class="position">UDSM</span>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </div>
-
-    </div>
-</div>
-
-
-<div class="site-section courses-title" id="courses-section" style="background-color: #fff">
-    <div class="container">
-        <div class="row mb-5 justify-content-center">
-            <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
-                <h2 class="section-title" style="color: #000">Vacancies Categories</h2>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="site-section courses-entry-wrap" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8 d-flex flex-column align-items-center">
-            <!-- Success Message -->
-            {{-- @if (session('success'))
-            <div id="success-alert" class="alert alert-success">
-                {{ session('success') }}
-            </div>
-            @endif
-    
-            <!-- Error Message -->
-            @if (session('error'))
-            <div id="error-alert" class="alert alert-danger">
-                {{ session('error') }}
-            </div>
-            @endif --}}
-    
-            <!-- Cancel Button -->
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-    
-    <div class="container">
-       
-        <div class="row mt-3">
-            @if ($posts->isEmpty())
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="alert alert-info text-center">
-                        There are no posts available at the moment.
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-            @else
-                @foreach ($posts as $post)
-                    <div class="col-lg-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">{{ $post->created_at->format('Y-m-d') }}</span>
-                                <div class="meta"><span class="icon-clock-o"></span><b class="text-success">
-                                        {{ $post->application_date }}</b> | <b class="text-success">Open</b></div>
-                                <h3><a href="" style="color: #FF6F0F">{{ $post->vacant_category }}</a></h3>
-                                <p style="text-align: justify">
-                                    {{ Illuminate\Support\Str::limit(strip_tags($post->summary), 100) }}</p>
-
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><a
-                                        href="{{ route('postdeatail', $post->id) }}"><span
-                                            class="icon-sign-in"></span> View More</a></div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-sign-in"></span> 2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            @endif
-            {{-- <div class="col-lg-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-                           
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">1</span>
-                                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                                <h3><a href="#"  style="color: #FF6F0F; font-weight:700">IT and Telecoms</a></h3>
-                                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><span class="icon-sign-in"></span> Apply Now</div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chart"></span> 2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-                            
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">9</span>
-                                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                                <h3><a href="#"  style="color: #FF6F0F; font-weight:700">Healthcare and Pharmaceutical </a></h3>
-                                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><span class="icon-sign-in"></span> Apply Now</div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chart"></span> 2
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> --}}
-
-
-
-
-        </div>
-        {{-- <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">2</span>
-                                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                                <h3><a href="#" style="color: #FF6F0F; font-weight:700">HR & Administration</a></h3>
-                                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><span class="icon-sign-in"></span> Apply Now</div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chart"></span> 2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">10</span>
-                                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                                <h3><a href="#"  style="color: #FF6F0F; font-weight:700">Socaials Studys and Arts</a></h3>
-                                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><span class="icon-sign-in"></span> Apply Now</div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chart"></span> 2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="course bg-white h-100 align-self-stretch"
-                            style=" box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-                            <div class="course-inner-text py-4 px-4">
-                                <span class="course-price">9</span>
-                                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                                <h3><a href="#" style="color: #FF6F0F; font-weight:700">Science Studies and Technincian</a></h3>
-                                <p>Lorem ipsum dolor sit amet ipsa nulla adipisicing elit. </p>
-                            </div>
-                            <div class="d-flex border-top stats">
-                                <div class="py-3 px-4" style="color: #FF6F0F; font-weight:600"><span class="icon-sign-in"></span> Apply Now</div>
-                                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chart"></span> 2
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                </div> --}}
-
-    </div>
-</div>
-
-
-
+    </section>
 
 @include('layouts.welcome.footer')

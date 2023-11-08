@@ -1,81 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>ICD | PORTAL</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139029947-15"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139029947-15');
+    </script>
+
+    <title>Tanzania Startup Association</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Tanzania Startup Association" name="title">
+    <meta content="Tanzania Startup Association is an umbrella membership-based organization which bring together stakeholders of startup ecosystem in Tanzania to drive the agenda that ensures the growth of the startup ecosystem." name="description">
+    <meta content="Tanzania Startup Association" name="author">
+    <meta content="Startup association, Startup ecosystem, Tanzania, public institutions, private companies, development partners, academia, hubs, investor networks" name="keywords">
 
+    <meta content="index, follow" name="robots">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="English" name="language">
+    <meta content="Kiswahili" name="language">
+    <meta http-equiv="refresh" content="3600">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('web/fonts/icomoon/style.css') }}">
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type">
+    <meta content="/" property="og:url">
+    <meta content="Tanzania Startup Association" property="og:title">
+    <meta content="Tanzania Startup Association is an umbrella membership-based organization which bring together stakeholders of startup ecosystem in Tanzania to drive the agenda that ensures the growth of the startup ecosystem.">
+    <meta content="https://tsa.co.tz/images/bg_1.jpg" property="og:image">
 
-    <link rel="stylesheet" href="{{ asset('web/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/jquery.fancybox.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/bootstrap-datepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/fonts/flaticon/font/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/aos.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('web/css/style.css') }}"> --}}
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card">
+    <meta content="/" property="twitter:url">
+    <meta content="Tanzania Startup Association" property="twitter:title">
+    <meta content="Tanzania Startup Association is an umbrella membership-based organization which bring together stakeholders of startup ecosystem in Tanzania to drive the agenda that ensures the growth of the startup ecosystem." property="twitter:description">
+    <meta content="https://tsa.co.tz/images/bg_1.jpg" property="twitter:image">
+    <title>Tanzania Startup Association</title>
 
-    <link rel="shortcut icon" href="{{asset('web/img/favicone.jpeg')}}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
+    <link rel="stylesheet" href="{{asset('web/css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('web/owl.theme.default.min.css')}}css/">
+    <link rel="stylesheet" href="{{asset('web/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('web/fonts/icons/css/all.css')}}">
+    <link rel="stylesheet" href="{{asset('web/fonts/icons/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('web/css/bootstrap.min.css')}}">
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-    <div class="site-wrap">
-
-        <div class="site-mobile-menu site-navbar-target">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
-        </div>
-
-
-        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"
-            style="background-color:   #001D23; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-            <div class="container-fluid">
-                <div class="d-flex align-items-center">
-                    <div class="site-logo mr-auto w-25"><a href="/" style="color: #FFF">IFAKARA <b style="color: #FF6F0F">PORTAL</b></a></div>
-
-                    <div class="mx-auto text-center">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                                <li><a href="/" class="nav-link" style="color:   #FF6F0F">Home</a></li>
-                                <li><a href="/" class="nav-link" style="color: #FF6F0F">Vacancies</a></li>
-                                <li><a href="{{route('viewjob')}}" class="nav-link" style="color: #FF6F0F">ICD
-                                        Platforms</a></li>
-                                <li><a href="/" class="nav-link" style="color:#FF6F0F">Feedback</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="ml-auto w-25">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
-                            <ul
-                                class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                                <li class="cta"><a href="/" class="nav-link"><span style="color: #FFF">Contact
-                                            Us</span></a></li>
-                            </ul>
-                        </nav>
-                        <a href="#"
-                            class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
-                                class="icon-menu h3" style="color: #FF6F0F"></span></a>
-                    </div>
-                </div>
-            </div>
-
-        </header>
+<body>
