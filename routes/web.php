@@ -53,10 +53,19 @@ use GuzzleHttp\Psr7\UploadedFile;
 Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 Route::get('/email_verification',[VerificationController::class,'verify_email'])->name('verify_email');
 Route::get('/general-information', [HomeController::class, 'generalinformation'])->name('generalinformation');
-Route::get('/how-to-applyjob', [HomeController::class, 'howtoapplyjob'])->name('howtoapplyjob');
-Route::get('/how-to-prepare-for-interview', [HomeController::class, 'interview'])->name('interview');
-Route::get('/view-job', [HomeController::class, 'viewjob'])->name('viewjob');
-Route::get('/post-details/{id}', [HomeController::class, 'postdeatail'])->name('postdeatail');
+
+Route::get('/about_us', [HomeController::class, 'about'])->name('about_us');
+Route::get('/contact_us', [HomeController::class, 'contact'])->name('contact_us');
+Route::get('/news',[HomeController::class, 'news'])->name('news');
+Route::get('/publications',[HomeController::class, 'publication'])->name('publications');
+Route::get('/events',[HomeController::class, 'events'])->name('events');
+Route::get('/membership',[HomeController::class, 'membership'])->name('membership');
+
+
+
+
+
+
 
 
 Route::post('/post-application',[ApplicationController::class,'create'])->name('post');

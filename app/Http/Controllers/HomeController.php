@@ -69,22 +69,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function generalinformation(){
-        return view('user.userdeskhelp.generalInformation');
-    }
-
-    public function howtoapplyjob(){
-        return view('user.userdeskhelp.howtoapply');
-    }
-
-    public function interview(){
-        return view('user.userdeskhelp.interview');
-    }
-    public function viewjob()
-    {
-        return view('viewjob');
-    }
-    
+   
     public function postdeatail($id)
     {
         $institution = institution::get();
@@ -107,6 +92,28 @@ class HomeController extends Controller
         ]);
     }
    
+    public function about(){
+        return view ('pages.about');
+    }
 
+    public function contact(){
+        return view ('pages.contact');
+    }
+
+    public function publication(){
+        return view('pages.publication');
+    }
+    
+    public function news(){
+        return view('pages.news');
+    }
+
+    public function events(){
+        return view('pages.event');
+    }
+
+    public function membership(){
+        return view('pages.membership');
+    }
 
 }
